@@ -4,11 +4,11 @@ from BMI_Calculator import Get_Category
 
 class BMI_Test_Case(unittest.TestCase):
 
-    def Test_BMI_Calc(self):
+    def test_BMI_Calc(self):
         BMI = BMI_Calc(6, 0, 160)
         self.assertEqual(BMI, 22.2)
 
-    def Test_Get_Category(self):
+    def test_Get_Category(self):
         category = Get_Category(16.0)
         self.assertEqual(category, "underweight")
 
