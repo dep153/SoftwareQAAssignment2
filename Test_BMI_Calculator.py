@@ -41,4 +41,3 @@ class BMI_Test_Case(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-    
