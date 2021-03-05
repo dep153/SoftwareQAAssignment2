@@ -3,6 +3,7 @@ from BMI_Calculator import BMI_Calc
 from BMI_Calculator import Get_Category
 
 class BMI_Test_Case(unittest.TestCase):
+
     def Test_BMI_Calc(self):
         BMI = BMI_Calc(6, 0, 160)
         self.assertEqual(BMI, 22.2)

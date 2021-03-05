@@ -2,6 +2,8 @@
 
 from BMI_Calculator import BMI_Calc
 from BMI_Calculator import Get_Category
+from Retirement_Tracker import Retire_Tracker
+from Retirement_Tracker import The_Hard_Truth
 
 while True:
 
