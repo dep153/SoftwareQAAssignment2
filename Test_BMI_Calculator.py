@@ -38,3 +38,6 @@ class BMI_Test_Case(unittest.TestCase):
 
         category = Get_Category(35.0)
         self.assertEqual(category, "obese")
+
+        if __name__ == '__main__':
+            unittest.main()

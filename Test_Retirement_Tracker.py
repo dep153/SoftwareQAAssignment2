@@ -20,3 +20,6 @@ class Retirement_Test_Case(unittest.TestCase):
 
         success = The_Hard_Truth(110)
         self.assertEqual(success, False)
+
+        if __name__ == '__main__':
+            unittest.main()
