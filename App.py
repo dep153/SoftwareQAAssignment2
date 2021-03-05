@@ -36,7 +36,7 @@ while True:
         category = Get_Category(BMI)
 
         print("You are " + category + ".\n")
-        
+
         input("Enter any value to continue: ")
 
     elif ans == 2:
@@ -68,3 +68,5 @@ while True:
 
         else:
             print("You will NEVER retire.\n")
+
+        input("Enter any value to continue: ")
