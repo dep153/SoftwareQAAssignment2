@@ -1,6 +1,7 @@
 ﻿#David Penfield, dep153
 
 from BMI_Calculator import BMI_Calc
+from BMI_Calculator import Get_Category
 
 print("Which application would you like to run?")
 print("1) BMI Calculator")
@@ -31,6 +32,10 @@ while True:
         BMI = BMI_Calc(feet, inches, pounds)
 
         print("Your BMI is " + BMI + ".")
+
+        category = Get_Category(BMI)
+        
+        print("You are " + category + ".")
 
     #elif ans == 2:
     #    Retire_Tracker()

@@ -1,4 +1,6 @@
 ﻿# Calculate a person's body mass index
+# Takes weight
+# Takes height in two variables
 
 def BMI_Calc(feet, inches, pounds):
 
@@ -11,3 +13,20 @@ def BMI_Calc(feet, inches, pounds):
     BMI = round(BMI_exact, 1)
 
     return BMI
+
+# Returns a person's BMI category
+# Takes BMI
+
+def Get_Category(BMI):
+
+    if BMI <= 18.5:
+        return "underweight"
+
+    elif BMI <= 24.9:
+        return "a normal weight"
+
+    elif BMI <= 29.9:
+        return "overweight"
+
+    else:
+        return "obese"
