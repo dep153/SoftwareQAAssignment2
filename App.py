@@ -23,9 +23,7 @@ while True:
         if inches == "x":
             break
 
-        print("Please input your weight in pounds.\n")
-
-        pounds = int(input("Pounds: "))
+        pounds = int(input("Please input your weight in pounds: "))
         if pounds == "x":
             break
 
@@ -39,5 +37,32 @@ while True:
         
         input("Enter any value to continue: ")
 
-    #elif ans == 2:
-    #    Retire_Tracker()
+    elif ans == 2:
+
+        age = int(input("Please input your age: "))
+        if age == "x":
+            break
+
+        salary = int(input("Please input your annual salary: "))
+        if salary == "x":
+            break
+
+        saved = float(input("Please input the percentage of annual salary you plan to save (format: 0.xx): "))
+        if saved == "x":
+            break
+
+        goal = int(input("Please input your retirement savings goal: "))
+        if goal == "x":
+            break
+
+        age_met = Retire_Tracker(age, salary, saved, goal)
+
+        print("You are projected to meet your retirement goal by the age of " + str(age_met) + ".")
+
+        success = The_Hard_Truth(age_met)
+
+        if success:
+            print("Congratulations! You will successfully be able to retire!")
+
+        else:
+            print("You will NEVER retire.")

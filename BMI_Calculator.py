@@ -9,10 +9,9 @@ def BMI_Calc(feet, inches, pounds):
     height_in_inches = (feet * 12) + inches
     meters = height_in_inches * 0.025
 
-    BMI_exact = kilos / (meters * meters)
-    BMI = round(BMI_exact, 1)
+    BMI = kilos / (meters * meters)
 
-    return BMI
+    return round(BMI, 1)
 
 # Returns a person's BMI category
 # Takes BMI
